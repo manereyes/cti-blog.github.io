@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Theat Hunting Loop · Coffee, Tails &amp; Insights Blog
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="José Reyes">
+<meta name="description" content="
+&ldquo;a threat is any circumstance or event that has the potential to exploit vulnerabilities.&rdquo;
+- Definition of Threat in Practical Threat Intelligence and Data-Driven Threat Hunting. By Valentina Costa-Gazcón.
+
+
+  The Threat Hunting Loop.
+  
+    
+    Link to heading
+  
+
+The Threat Hunting Loop is a methodology that aids one of the main problems of Threat Hunting. Organizations often require a methodology for Threat Hunting and Threat Hunters need tools that facilitate Theat Hunting.">
+<meta name="keywords" content="blog,developer,personal,cybersecurity">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Theat Hunting Loop">
+  <meta name="twitter:description" content="“a threat is any circumstance or event that has the potential to exploit vulnerabilities.”
+- Definition of Threat in Practical Threat Intelligence and Data-Driven Threat Hunting. By Valentina Costa-Gazcón.
+The Threat Hunting Loop. Link to heading The Threat Hunting Loop is a methodology that aids one of the main problems of Threat Hunting. Organizations often require a methodology for Threat Hunting and Threat Hunters need tools that facilitate Theat Hunting.">
+
+<meta property="og:url" content="https://manereyes.github.io/cti-blog.github.io/posts/threathuntingloop/">
+  <meta property="og:site_name" content="Coffee, Tails & Insights Blog">
+  <meta property="og:title" content="Theat Hunting Loop">
+  <meta property="og:description" content="“a threat is any circumstance or event that has the potential to exploit vulnerabilities.”
+- Definition of Threat in Practical Threat Intelligence and Data-Driven Threat Hunting. By Valentina Costa-Gazcón.
+The Threat Hunting Loop. Link to heading The Threat Hunting Loop is a methodology that aids one of the main problems of Threat Hunting. Organizations often require a methodology for Threat Hunting and Threat Hunters need tools that facilitate Theat Hunting.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-06-22T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-06-22T00:00:00+00:00">
+    <meta property="article:tag" content="ThreatHunting">
+    <meta property="article:tag" content="Cybersecurity">
+
+
+
+
+<link rel="canonical" href="https://manereyes.github.io/cti-blog.github.io/posts/threathuntingloop/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/cti-blog.github.io/css/coder.min.6445a802b9389c9660e1b07b724dcf5718b1065ed2d71b4eeaf981cc7cc5fc46.css" integrity="sha256-ZEWoArk4nJZg4bB7ck3PVxixBl7S1xtO6vmBzHzF/EY=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+<body class="preload-transitions colorscheme-light">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="https://manereyes.github.io/cti-blog.github.io/">
+      Coffee, Tails &amp; Insights Blog
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/cti-blog.github.io/posts/">Posts</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/cti-blog.github.io/about/">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://manereyes.github.io/cti-blog.github.io/posts/threathuntingloop/">
+              Theat Hunting Loop
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2025-06-22T00:00:00Z">
+                June 22, 2025
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              4-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/cti-blog.github.io/tags/threathunting/">ThreatHunting</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/cti-blog.github.io/tags/cybersecurity/">Cybersecurity</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <blockquote>
+<p>&ldquo;a <strong>threat</strong> is any circumstance or event that has the potential to exploit vulnerabilities.&rdquo;</p></blockquote>
+<p>- Definition of Threat in <em>Practical Threat Intelligence and Data-Driven Threat Hunting</em>. By <em>Valentina Costa-Gazcón</em>.</p>
+<hr>
+<h1 id="the-threat-hunting-loop">
+  The Threat Hunting Loop.
+  <a class="heading-link" href="#the-threat-hunting-loop">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>The Threat Hunting Loop is a methodology that aids one of the main problems of Threat Hunting. Organizations often require a methodology for Threat Hunting and Threat Hunters need tools that facilitate Theat Hunting.</p>
+<p>The <strong>iterative process</strong> of Threat Hunting Loop:</p>
+<h2 id="hahahugoshortcode2s0hbhb">
+  <div class="mermaid">
+graph TD
+
+1["Create Hypotheses"] --> 2["Investigate via tools and techniques"] --> 3["Uncover new patters and TTPs"] --> 4["Enrich analytics"] --> 1
+
+class 1,2,3,4 internal-link;
+
+</div>
+
+  <a class="heading-link" href="#hahahugoshortcode2s0hbhb">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h1 id="hypothesis-creation">
+  Hypothesis Creation.
+  <a class="heading-link" href="#hypothesis-creation">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<ol>
+<li>The most important part of a Threat Hunting is to define the proper questions to assess the Threat Hunting process and approach.</li>
+</ol>
+<p><strong>Threat Hunters</strong> might ask questions like:
+<em>&ldquo;How could the attacker infiltrate into the network?&rdquo;</em></p>
+<h2 id="types-of-hypotheses">
+  Types of hypotheses.
+  <a class="heading-link" href="#types-of-hypotheses">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Type</th>
+          <th>Definition</th>
+          <th>Approach</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Intelligence-Driven Hypotheses.</td>
+          <td>Based on Tactics, Techniques and Procedures (TTPs) with further context provided by assessments of the geopolitical and threat landscapes.</td>
+          <td>Relying only on Indicators of Compromise can over burden your findings with low quality matches. Instead, use IOCs for quick win if lacking of time, then move up to Pyramid of Pain to understand. TTPs</td>
+          <td><em>&ldquo;I know that (group) is a high priority threat for my organization because of our location and industry. If this threat actor is present in our network, we should be able to detect evidence of multiple techniques used by the group, consistent with their known attack paths.&rdquo;</em></td>
+      </tr>
+      <tr>
+          <td>Situational Awareness Hypotheses.</td>
+          <td>Based on the understanding of the environment and identifying when it changes in some significant way.</td>
+          <td>Defenders can develop hypotheses about adversary activities that might occur in their environments. They also require to focus on their most important assets by using Crown Jewel Analysis (CJA) and use automation (<em>like dashboards</em>) to keep up with rapidly changing infrastructure, applications and vulnerabilities.</td>
+          <td><em>&ldquo;I will limit my search to just high-value targets (crown jewels), such as the domain admin accounts. If attackers abuse domain admin credentials in our network, we should be able to detect outliers like a spike in Domain Admin account logons.&rdquo;</em></td>
+      </tr>
+      <tr>
+          <td>Domain Expertise Hypotheses.</td>
+          <td>Based on the hunter&rsquo;s unique set of experiences and skills. However this approaching can have a side effect, bias.</td>
+          <td>Domain expertise can be viewed as both CTI and Situational awareness in a historical context, but experience often comes with bias. Hunters need to be aware of their cognitive biases to ensure good decisions are made. They can use Analysis of Competing Hypotheses (ACH) or The Diamond Model of Intrusion Analysis to draw accurate conclusions and structuring data to overcome biases.</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h1 id="investigating-via-tools-and-techniques">
+  Investigating Via Tools and Techniques.
+  <a class="heading-link" href="#investigating-via-tools-and-techniques">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>The next step of <strong>Create Hypotheses</strong>. Here we test our hypothesis.</p>
+<p>Threat Hunters must ask questions before diving into investigations. These questions ensure the hypothesis is strong or able to be investigated.</p>
+<ul>
+<li>Which data sources we need?</li>
+<li>Do we have the required data visibility?</li>
+<li>Do we have the required historical data?</li>
+</ul>
+<div class="mermaid">
+graph TD
+
+A((Hypothesis Testing)) --> B[Which data sources do we need?]
+B --> C[Firewall logs, Endpoint logs, Network Traffic, etc.]
+
+A --> BB[Do we have required data visibility?]
+BB --> CC[SIEM, XDR, IDS, NIDS]
+
+A --> BBB[Do we have historical data?]
+BBB --> CCC[Past events, incidents, configurations]
+
+C --> D[Start hunting]
+CC --> D
+CCC --> D
+
+</div>
+
+<h2 id="what-can-you-do-with-your-findings">
+  What can you do with your findings?
+  <a class="heading-link" href="#what-can-you-do-with-your-findings">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li>Inform Incident Response Team to investigate.</li>
+<li>Uncover new patters and TTPs to Detection Engineers.</li>
+</ul>
+<hr>
+<h1 id="uncovering-new-patterns-and-ttps">
+  Uncovering New Patterns and TTPs.
+  <a class="heading-link" href="#uncovering-new-patterns-and-ttps">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<ol>
+<li>The process of reporting your threat hunting findings.</li>
+</ol>
+<p>Your hypotheses maybe could or <strong>could not lead to any results</strong>, or you can find new IOCs</p>
+<div class="mermaid">
+graph LR
+
+A((Hypothesis)) --> B{Hunt}
+B -- Success --> C[Document findings]
+C --> End[Plan future hunt]
+
+B -- Fail --> CC[Reflect on failure]
+CC --> D["Inefficient tools, data gaps, or wrong queries"]
+D --> End
+
+End --> A
+
+</div>
+
+<p>Failed Threat Huntings may reveal non-malicious but risky configurations or behaviors such as:</p>
+<ul>
+<li>Suspicious IOCs (<em>files, IP Adresses, Hashes</em>).</li>
+<li>Misconfigured systems.</li>
+<li>Unpatched software.</li>
+<li>Blind spots in data or logs, known as <em><strong>Logging gaps</strong></em>.</li>
+</ul>
+<hr>
+<h1 id="inform-and-enrich-analytics">
+  Inform and Enrich Analytics.
+  <a class="heading-link" href="#inform-and-enrich-analytics">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<ol>
+<li>The process where you transform your relevant findings into insights.</li>
+</ol>
+<p>The <strong>final process</strong>, where you convert your conclusions into recommendations and immediate actions to improve the security posture.</p>
+<p>You can either save your results and schedule them to quickly repeat the hunting in the future to find more IOCs or tactics related.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Turn your results into.</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Analytics, such as Sigma or Yara rules.</td>
+      </tr>
+      <tr>
+          <td>Scheduled tasks to repeat huntings in the future.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<p><em>By José Reyes - CTI (Coffee, Tails and Insights). 2025</em></p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2025
+     José Reyes 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@9.3.0/dist/mermaid.min.js"
+    integrity="sha256-QdTG1YTLLTwD3b95jLqFxpQX9uYuJMNAtVZgwKX4oYU=" crossorigin="anonymous"></script>
+  <script>
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+  
+
+  
+  
+  <script src="/cti-blog.github.io/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>
