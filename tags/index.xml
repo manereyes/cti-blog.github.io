@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Coffee, Tails &amp; Insights Blog</title>
-    <link>http://localhost:1313/cti-blog.github.io/tags/</link>
+    <link>https://manereyes.github.io/cti-blog.github.io/tags/</link>
     <description>Recent content in Tags on Coffee, Tails &amp; Insights Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 22 Jun 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/cti-blog.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://manereyes.github.io/cti-blog.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cybersecurity</title>
-      <link>http://localhost:1313/cti-blog.github.io/tags/cybersecurity/</link>
+      <link>https://manereyes.github.io/cti-blog.github.io/tags/cybersecurity/</link>
       <pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cti-blog.github.io/tags/cybersecurity/</guid>
+      <guid>https://manereyes.github.io/cti-blog.github.io/tags/cybersecurity/</guid>
       <description></description>
     </item>
     <item>
       <title>ThreatHunting</title>
-      <link>http://localhost:1313/cti-blog.github.io/tags/threathunting/</link>
+      <link>https://manereyes.github.io/cti-blog.github.io/tags/threathunting/</link>
       <pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cti-blog.github.io/tags/threathunting/</guid>
+      <guid>https://manereyes.github.io/cti-blog.github.io/tags/threathunting/</guid>
       <description></description>
     </item>
     <item>
       <title>ThreatIntelligence</title>
-      <link>http://localhost:1313/cti-blog.github.io/tags/threatintelligence/</link>
+      <link>https://manereyes.github.io/cti-blog.github.io/tags/threatintelligence/</link>
       <pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cti-blog.github.io/tags/threatintelligence/</guid>
+      <guid>https://manereyes.github.io/cti-blog.github.io/tags/threatintelligence/</guid>
       <description></description>
     </item>
   </channel>

@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Coffee, Tails &amp; Insights Blog</title>
-    <link>http://localhost:1313/cti-blog.github.io/</link>
+    <link>https://manereyes.github.io/cti-blog.github.io/</link>
     <description>Recent content on Coffee, Tails &amp; Insights Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 22 Jun 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/cti-blog.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://manereyes.github.io/cti-blog.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>http://localhost:1313/cti-blog.github.io/about/</link>
+      <link>https://manereyes.github.io/cti-blog.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cti-blog.github.io/about/</guid>
+      <guid>https://manereyes.github.io/cti-blog.github.io/about/</guid>
       <description>&lt;h1 id=&#34;-about-this-raccoon&#34;&gt;&#xA;  ☕ About This Raccoon&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#-about-this-raccoon&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to &lt;strong&gt;CTI – ☕️ Coffee, 🦝 Tails and 🔎 Insights&lt;/strong&gt;:&lt;br&gt;&#xA;a curated space of digital thoughts brewed with espresso and sharpened by threat intelligence.&lt;/p&gt;&#xA;&lt;p&gt;My name is &lt;strong&gt;J. Manuel Reyes López&lt;/strong&gt;, but here, I’m just your local raccoon—digging through logs, mapping attack paths, and connecting dots between data, adversaries, and the human element.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-what-this-blog-is&#34;&gt;&#xA;  🔎 What this blog is&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#-what-this-blog-is&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;This site is my public &lt;strong&gt;second brain&lt;/strong&gt;—a collection of annotated Zettelkasten-style notes, visual diagrams, loops, and field logs around topics like:&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Indicator Lifecycle</title>
-      <link>http://localhost:1313/cti-blog.github.io/posts/indicatorlifecycle/</link>
+      <link>https://manereyes.github.io/cti-blog.github.io/posts/indicatorlifecycle/</link>
       <pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cti-blog.github.io/posts/indicatorlifecycle/</guid>
+      <guid>https://manereyes.github.io/cti-blog.github.io/posts/indicatorlifecycle/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;An indicator is any piece of information that describes an intrusion.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;- Definition of an Indicator in &lt;em&gt;Visual Threat Intelligence: An Illustrated Guide For Threat Researchers&lt;/em&gt;. By &lt;em&gt;Thomas Roccia&lt;/em&gt;..&lt;/p&gt;&#xA;&lt;h1 id=&#34;the-indicator-lifecycle&#34;&gt;&#xA;  The Indicator Lifecycle.&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#the-indicator-lifecycle&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;The indicator Lifecycle highlights the importance of analyzing attacks and tracking an indicator&amp;rsquo;s derivation from its predecessors.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Types of &lt;em&gt;&lt;strong&gt;Indicators&lt;/strong&gt;&lt;/em&gt;:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Type&lt;/th&gt;&#xA;          &lt;th&gt;Definition&lt;/th&gt;&#xA;          &lt;th&gt;Example&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Atomic&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Simple and indivisible indicators with context-specific meaning.&lt;/td&gt;&#xA;          &lt;td&gt;Malicious IP addresses, Malicious domains.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Computed&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Indicators derived from data involved in an incident.&lt;/td&gt;&#xA;          &lt;td&gt;Hashes, Malware.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Behavioral&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Collections of &lt;em&gt;&lt;strong&gt;atomic&lt;/strong&gt;&lt;/em&gt; and &lt;em&gt;&lt;strong&gt;computed&lt;/strong&gt;&lt;/em&gt; indicators, Often characterized by quantity and combinatorial logic.&lt;/td&gt;&#xA;          &lt;td&gt;Tactics, Techniques and Procedures (TTPs)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;The &lt;strong&gt;Indicator Lifecycle&lt;/strong&gt; process:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Theat Hunting Loop</title>
-      <link>http://localhost:1313/cti-blog.github.io/posts/threathuntingloop/</link>
+      <link>https://manereyes.github.io/cti-blog.github.io/posts/threathuntingloop/</link>
       <pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cti-blog.github.io/posts/threathuntingloop/</guid>
+      <guid>https://manereyes.github.io/cti-blog.github.io/posts/threathuntingloop/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;a &lt;strong&gt;threat&lt;/strong&gt; is any circumstance or event that has the potential to exploit vulnerabilities.&amp;rdquo;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;- Definition of Threat in &lt;em&gt;Practical Threat Intelligence and Data-Driven Threat Hunting&lt;/em&gt;. By &lt;em&gt;Valentina Costa-Gazcón&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;the-threat-hunting-loop&#34;&gt;&#xA;  The Threat Hunting Loop.&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#the-threat-hunting-loop&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;The Threat Hunting Loop is a methodology that aids one of the main problems of Threat Hunting. Organizations often require a methodology for Threat Hunting and Threat Hunters need tools that facilitate Theat Hunting.&lt;/p&gt;</description>
     </item>
   </channel>

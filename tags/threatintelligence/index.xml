@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ThreatIntelligence on Coffee, Tails &amp; Insights Blog</title>
-    <link>http://localhost:1313/cti-blog.github.io/tags/threatintelligence/</link>
+    <link>https://manereyes.github.io/cti-blog.github.io/tags/threatintelligence/</link>
     <description>Recent content in ThreatIntelligence on Coffee, Tails &amp; Insights Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 22 Jun 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/cti-blog.github.io/tags/threatintelligence/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://manereyes.github.io/cti-blog.github.io/tags/threatintelligence/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Indicator Lifecycle</title>
-      <link>http://localhost:1313/cti-blog.github.io/posts/indicatorlifecycle/</link>
+      <link>https://manereyes.github.io/cti-blog.github.io/posts/indicatorlifecycle/</link>
       <pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cti-blog.github.io/posts/indicatorlifecycle/</guid>
+      <guid>https://manereyes.github.io/cti-blog.github.io/posts/indicatorlifecycle/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;An indicator is any piece of information that describes an intrusion.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;- Definition of an Indicator in &lt;em&gt;Visual Threat Intelligence: An Illustrated Guide For Threat Researchers&lt;/em&gt;. By &lt;em&gt;Thomas Roccia&lt;/em&gt;..&lt;/p&gt;&#xA;&lt;h1 id=&#34;the-indicator-lifecycle&#34;&gt;&#xA;  The Indicator Lifecycle.&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#the-indicator-lifecycle&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;The indicator Lifecycle highlights the importance of analyzing attacks and tracking an indicator&amp;rsquo;s derivation from its predecessors.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Types of &lt;em&gt;&lt;strong&gt;Indicators&lt;/strong&gt;&lt;/em&gt;:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Type&lt;/th&gt;&#xA;          &lt;th&gt;Definition&lt;/th&gt;&#xA;          &lt;th&gt;Example&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Atomic&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Simple and indivisible indicators with context-specific meaning.&lt;/td&gt;&#xA;          &lt;td&gt;Malicious IP addresses, Malicious domains.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Computed&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Indicators derived from data involved in an incident.&lt;/td&gt;&#xA;          &lt;td&gt;Hashes, Malware.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Behavioral&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Collections of &lt;em&gt;&lt;strong&gt;atomic&lt;/strong&gt;&lt;/em&gt; and &lt;em&gt;&lt;strong&gt;computed&lt;/strong&gt;&lt;/em&gt; indicators, Often characterized by quantity and combinatorial logic.&lt;/td&gt;&#xA;          &lt;td&gt;Tactics, Techniques and Procedures (TTPs)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;The &lt;strong&gt;Indicator Lifecycle&lt;/strong&gt; process:&lt;/p&gt;</description>
     </item>
   </channel>
