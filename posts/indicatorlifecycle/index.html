@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/cti-blog.github.io/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=cti-blog.github.io/livereload" data-no-instant defer></script>
+  <title>
+  The Indicator Lifecycle · Coffee, Tails &amp; Insights Blog
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="José Reyes">
+<meta name="description" content="
+An indicator is any piece of information that describes an intrusion.
+- Definition of an Indicator in Visual Threat Intelligence: An Illustrated Guide For Threat Researchers. By Thomas Roccia..
+
+  The Indicator Lifecycle.
+  
+    
+    Link to heading
+  
+
+
+The indicator Lifecycle highlights the importance of analyzing attacks and tracking an indicator&rsquo;s derivation from its predecessors.
+
+Types of Indicators:
+
+  
+      
+          Type
+          Definition
+          Example
+      
+  
+  
+      
+          Atomic
+          Simple and indivisible indicators with context-specific meaning.
+          Malicious IP addresses, Malicious domains.
+      
+      
+          Computed
+          Indicators derived from data involved in an incident.
+          Hashes, Malware.
+      
+      
+          Behavioral
+          Collections of atomic and computed indicators, Often characterized by quantity and combinatorial logic.
+          Tactics, Techniques and Procedures (TTPs)
+      
+  
+
+The Indicator Lifecycle process:">
+<meta name="keywords" content="blog,developer,personal,cybersecurity">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="The Indicator Lifecycle">
+  <meta name="twitter:description" content="An indicator is any piece of information that describes an intrusion.
+- Definition of an Indicator in Visual Threat Intelligence: An Illustrated Guide For Threat Researchers. By Thomas Roccia..
+The Indicator Lifecycle. Link to heading The indicator Lifecycle highlights the importance of analyzing attacks and tracking an indicator’s derivation from its predecessors. Types of Indicators:
+Type Definition Example Atomic Simple and indivisible indicators with context-specific meaning. Malicious IP addresses, Malicious domains. Computed Indicators derived from data involved in an incident. Hashes, Malware. Behavioral Collections of atomic and computed indicators, Often characterized by quantity and combinatorial logic. Tactics, Techniques and Procedures (TTPs) The Indicator Lifecycle process:">
+
+<meta property="og:url" content="http://localhost:1313/cti-blog.github.io/posts/indicatorlifecycle/">
+  <meta property="og:site_name" content="Coffee, Tails & Insights Blog">
+  <meta property="og:title" content="The Indicator Lifecycle">
+  <meta property="og:description" content="An indicator is any piece of information that describes an intrusion.
+- Definition of an Indicator in Visual Threat Intelligence: An Illustrated Guide For Threat Researchers. By Thomas Roccia..
+The Indicator Lifecycle. Link to heading The indicator Lifecycle highlights the importance of analyzing attacks and tracking an indicator’s derivation from its predecessors. Types of Indicators:
+Type Definition Example Atomic Simple and indivisible indicators with context-specific meaning. Malicious IP addresses, Malicious domains. Computed Indicators derived from data involved in an incident. Hashes, Malware. Behavioral Collections of atomic and computed indicators, Often characterized by quantity and combinatorial logic. Tactics, Techniques and Procedures (TTPs) The Indicator Lifecycle process:">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-06-22T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-06-22T00:00:00+00:00">
+    <meta property="article:tag" content="ThreatIntelligence">
+    <meta property="article:tag" content="Cybersecurity">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/cti-blog.github.io/posts/indicatorlifecycle/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/cti-blog.github.io/css/coder.css" media="screen">
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+<body class="preload-transitions colorscheme-light">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/cti-blog.github.io/">
+      Coffee, Tails &amp; Insights Blog
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/cti-blog.github.io/posts/">Posts</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/cti-blog.github.io/about/">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/cti-blog.github.io/posts/indicatorlifecycle/">
+              The Indicator Lifecycle
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2025-06-22T00:00:00Z">
+                June 22, 2025
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              2-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/cti-blog.github.io/tags/threatintelligence/">ThreatIntelligence</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/cti-blog.github.io/tags/cybersecurity/">Cybersecurity</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <blockquote>
+<p>An indicator is any piece of information that describes an intrusion.</p></blockquote>
+<p>- Definition of an Indicator in <em>Visual Threat Intelligence: An Illustrated Guide For Threat Researchers</em>. By <em>Thomas Roccia</em>..</p>
+<h1 id="the-indicator-lifecycle">
+  The Indicator Lifecycle.
+  <a class="heading-link" href="#the-indicator-lifecycle">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<ol>
+<li>The indicator Lifecycle highlights the importance of analyzing attacks and tracking an indicator&rsquo;s derivation from its predecessors.</li>
+</ol>
+<p>Types of <em><strong>Indicators</strong></em>:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Type</th>
+          <th>Definition</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Atomic</strong></td>
+          <td>Simple and indivisible indicators with context-specific meaning.</td>
+          <td>Malicious IP addresses, Malicious domains.</td>
+      </tr>
+      <tr>
+          <td><strong>Computed</strong></td>
+          <td>Indicators derived from data involved in an incident.</td>
+          <td>Hashes, Malware.</td>
+      </tr>
+      <tr>
+          <td><strong>Behavioral</strong></td>
+          <td>Collections of <em><strong>atomic</strong></em> and <em><strong>computed</strong></em> indicators, Often characterized by quantity and combinatorial logic.</td>
+          <td>Tactics, Techniques and Procedures (TTPs)</td>
+      </tr>
+  </tbody>
+</table>
+<p>The <strong>Indicator Lifecycle</strong> process:</p>
+<div class="mermaid">
+graph LR
+
+0[Reports] --> 1((Revelation)) -- Leverage --> 2((Maturation)) -- Discover --> 3((Utilization)) -- Analyze --> 1
+
+
+</div>
+
+<ol>
+<li>Analysts <strong>uncover</strong> indicators through analysis.</li>
+<li>Analysts <strong>optimize</strong> usage, updating sensors, improving detection tools.</li>
+<li>The indicator&rsquo;s potential is realized when it can be used to detect hostile activity.</li>
+</ol>
+<h2 id="-relevant-example">
+  ♟ Relevant example.
+  <a class="heading-link" href="#-relevant-example">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>A team of Malware Analysts can:</p>
+<ul>
+<li>Analyze (<em>Revelation</em>) a malware sample to obtain <em><strong>atomic</strong></em> indicators.</li>
+<li>Update (<em>Maturation</em>) their detection systems with the obtained indicators.</li>
+<li>Monitor (<em>Utilization</em>) network traffic using the redefined detection systems, identifying infection attempts made by the same malware.</li>
+</ul>
+<hr>
+<p><em><a href="https://www.lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf"  class="external-link" target="_blank" rel="noopener">Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains</a> paper. By Lockheed Martin</em></p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2025
+     José Reyes 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@9.3.0/dist/mermaid.min.js"
+    integrity="sha256-QdTG1YTLLTwD3b95jLqFxpQX9uYuJMNAtVZgwKX4oYU=" crossorigin="anonymous"></script>
+  <script>
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+  
+
+  
+  
+  <script src="/cti-blog.github.io/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>
